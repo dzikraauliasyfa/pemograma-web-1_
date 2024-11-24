@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Text Vitamin</title>
+    <style>
+        .container {
+            color: black;
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .vitamin {
+            position: relative;
+            padding-left: 25px;
+        }
+        .vitamin::before {
+            content: counter(vitamin-counter) ".";
+            counter-increment: vitamin-counter;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .vitamin h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .line {
+            border: 1px dashed lightblue;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vitamin" style="counter-reset: vitamin-counter 0;">
+            <h3>Vitamin E</h3>
+            <p>Memiliki <span class="highlight">anti aging</span> yang bisa mendorong perawatan kulit alami</p>
+        </div>
+        <div class="vitamin">
+            <h3>Vitamin K</h3>
+            <p>Membantu mencegah terjadinya <span class="highlight">osteoporosis</span></p>
+        </div>
+        <div class="vitamin">
+            <h3>Vitamin B5</h3>
+            <p>Membantu <span class="highlight">menurunkan</span> tingkat stress, meringankan rasa sakit</p>
+        </div>
+        <div class="vitamin">
+            <h3>Vitamin B6</h3>
+            <p>Membantu <span class="highlight">treat diabetes</span>, pendarahan menstruasi, insomnia</p>
+        </div>
+    </div>
+</body>
+</html>

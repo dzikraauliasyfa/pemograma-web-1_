@@ -1,0 +1,36 @@
+.atas{
+    background-color: rgb(132, 211, 132);
+    width: 1120px;
+    height: 100px;
+    margin: 15px;
+}
+.tengah{
+    display: flex;
+}
+.tengah .kotakkecil{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+.tengah .kotakbesar{
+    background-color: red;
+    width: 900px;
+    height: 200px;
+    margin: 15px;
+}
+.bawah{
+    display: flex;
+}
+.bawah .kotakkecil{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+.bawah .kotakbesar{
+    background-color: blue;
+    width: 900px;
+    height: 200px;
+    margin: 15px;
+}

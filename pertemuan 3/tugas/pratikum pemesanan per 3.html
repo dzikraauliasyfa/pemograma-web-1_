@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Sepatu</title>
+</head>
+<body>
+    <h1>Form Pemesanan Sepatu</h1>
+    <form action="proses_pemesanan.php" method="post">
+        <label for="nama">Nama Pemesan:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email Pemesan:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="30" required></textarea><br><br>
+
+        <label for="jenis_sepatu">Jenis Sepatu:</label><br>
+        <select id="jenis_sepatu" name="jenis_sepatu" required>
+            <option value="sneakers">Sneakers</option>
+            <option value="boots">Boots</option>
+            <option value="formal">Sepatu Formal</option>
+            <option value="sports">Sepatu Olahraga</option>
+        </select><br><br>
+
+        <label for="merek">Merek Sepatu:</label><br>
+        <select id="merek_sepatu" name="merek" required>
+            <option value="Reebok">Reebok</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Puma">Puma</option>
+        </select><br><br>
+
+        <label for="ukuran">Ukuran Sepatu:</label><br>
+        <select id="ukuran" name="ukuran" required>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+        </select><br><br>
+
+        <label for="jumlah">Jumlah Pasang:</label><br>
+        <input type="number" id="jumlah" name="jumlah" min="1" required><br><br>
+
+        <label for="catatan">Catatan Tambahan:</label><br>
+        <textarea id="catatan" name="catatan" rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Pesan Sekarang</button>
+    </form>
+</body>
+</html>

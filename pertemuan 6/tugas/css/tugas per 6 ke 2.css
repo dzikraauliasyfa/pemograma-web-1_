@@ -1,0 +1,42 @@
+.atas{
+    display: flex;
+}
+.atas .kotak1{
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+}
+.atas .kotak2{
+    background-color: red;
+    width: 1000px;
+    height: 50px;
+    margin: 10px;
+}
+.tengah{
+    display: flex;
+}
+.tengah .kotak1{
+    background-color: greenyellow;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+}
+.tengah .kotak2{
+    background-color: grey;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+}
+.tengah .kotak3{
+    background-color: skyblue;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+}
+.bawah{
+    background-color: darkblue;
+    width: 1220px;
+    height: 50px;
+    margin: 10px;
+}
