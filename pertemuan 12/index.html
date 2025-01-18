@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL AULIA DS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('img/hotel.avif');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        section {
+            padding: 20px;
+        }
+        .room {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .room img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>HOTEL AULIA DS</div>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#rooms">Kamar</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Selamat Datang di Hotel Aulia DS</h1>
+        <p>Pengalaman mewah menanti Anda</p>
+    </div>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Hotel Aulia DS adalah tempat peristirahatan mewah yang terletak di pusat kota, menawarkan fasilitas kelas dunia dan layanan yang luar biasa.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Kamar Kami</h2>
+        <div class="room">
+            <img src="img/kamar deluxe.jpg" alt="Kamar Deluxe">
+            <div>
+                <h3>Kamar Deluxe</h3>
+                <p>Harga: Rp 1.000.000/malam</p>
+                <p>Kamar luas dengan fasilitas lengkap, termasuk TV, Wi-Fi, dan pemandangan indah.</p>
+            </div>
+        </div>
+        <div class="room">
+            <img src="img/kamar suite.jpg" alt="Suite">
+            <div>
+                <h3>Suite</h3>
+                <p>Harga: Rp 2.500.000/malam</p>
+                <p>Ruang yang lebih besar dengan ruang tamu terpisah dan kenyamanan premium.</p>
+            </div>
+        </div>
+        <div class="room">
+            <img src="img/kamar presiden suite.jpg" alt="Suite Presiden">
+            <div>
+                <h3>Suite Presiden</h3>
+                <p>Harga: Rp 5.000.000/malam</p>
+                <p>Kemewahan tak tertandingi dengan fasilitas eksklusif dan layanan VIP.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: kontak@hotelauliads.com</p>
+        <p>Telepon: +62 123 456 789</p>
+        <p>Alamat: Jalan Surga No.123, Kota Bahagia</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel Aulia DS. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
